@@ -1,0 +1,93 @@
+/* General Styling */
+* {
+  margin: 2;
+  padding: 4;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(135deg, #9da9b8, #A6D8FF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Stopwatch Container */
+.stopwatch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.stopwatch {
+  background: #02111f;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #22c9a8;
+  text-align: center;
+  padding: 30px;
+  max-width: 300px;
+  width: 100%;
+  color: white; /* Text color for stopwatch (white) */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: aqua; /* Heading text color (aqua) */
+}
+
+#display {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 20px 30px;
+  background-color: #5ea8f2;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: yellow; /* Stopwatch text color (yellow) */
+}
+
+.controls button,
+.lap-controls button {
+  padding: 12px 20px;
+  font-size: 1.2em;
+  margin: 10px 5px;
+  background-color: #37af97;
+  color: rgb(202, 43, 43);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover,
+.lap-controls button:hover {
+  background-color: #1ABC9C;
+}
+
+.lap-times {
+  margin-top: 20px;
+}
+
+.lap-times h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.lap-times ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lap-times li {
+  background: #16A085;
+  padding: 8px 15px;
+  margin: 5px 3px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  text-align: left;
+  color: white; /* Lap times text color (white) */
+}
